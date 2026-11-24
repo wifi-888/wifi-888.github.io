@@ -14,12 +14,12 @@
     .search-box input { flex: 1; padding: 12px 18px; border-radius: 25px 0 0 25px; border: none; outline: none; font-size: 16px; background: #242424; color: #fff; }
     .search-box button { padding: 12px 20px; border-radius: 0 25px 25px 0; border: none; background: #4da6ff; color: #000; font-weight: bold; cursor: pointer; }
 
-    /* Quick Links Grid */
-    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; width: 100%; max-width: 450px; margin-bottom: 35px; }
-    .card { background: #1e1e1e; padding: 20px 10px; border-radius: 15px; text-align: center; text-decoration: none; color: #fff; transition: 0.2s; }
+    /* Quick Links Grid (4 Columns para kasya ang Spotify) */
+    .grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; width: 100%; max-width: 450px; margin-bottom: 35px; }
+    .card { background: #1e1e1e; padding: 18px 8px; border-radius: 15px; text-align: center; text-decoration: none; color: #fff; transition: 0.2s; }
     .card:hover { background: #2c2c2c; }
-    .icon { font-size: 28px; display: block; margin-bottom: 8px; }
-    .label { font-size: 14px; }
+    .icon { font-size: 26px; display: block; margin-bottom: 8px; }
+    .label { font-size: 13px; }
 
     /* Offline Files Section */
     .files { width: 100%; max-width: 450px; background: #1e1e1e; padding: 20px; border-radius: 15px; }
@@ -41,17 +41,21 @@
 
   <!-- Quick App Shortcuts -->
   <div class="grid">
-    <a href="https://youtube.com" target="_blank" class="card">
+    <a href="https://m.youtube.com" target="_blank" class="card">
       <span class="icon">▶️</span>
       <span class="label">YouTube</span>
     </a>
-    <a href="https://google.com" target="_blank" class="card">
+    <a href="https://spotify.com" target="_blank" class="card">
+      <span class="icon">🎧</span>
+      <span class="label">Spotify</span>
+    </a>
+    <a href="https://www.google.com" target="_blank" class="card">
       <span class="icon">🔍</span>
       <span class="label">Google</span>
     </a>
     <a href="#offline-files" class="card">
       <span class="icon">📁</span>
-      <span class="label">Offline Files</span>
+      <span class="label">Files</span>
     </a>
   </div>
 
