@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Wi-Fi Hub</title>
+  <style>
+    * { box-sizing: border-box; font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    body { background-color: #121212; color: #ffffff; display: flex; flex-direction: column; align-items: center; padding: 30px 15px; }
+    h1 { font-size: 24px; margin-bottom: 20px; color: #4da6ff; }
+    
+    /* Search Bar */
+    .search-box { width: 100%; max-width: 450px; display: flex; margin-bottom: 30px; }
+    .search-box input { flex: 1; padding: 12px 18px; border-radius: 25px 0 0 25px; border: none; outline: none; font-size: 16px; background: #242424; color: #fff; }
+    .search-box button { padding: 12px 20px; border-radius: 0 25px 25px 0; border: none; background: #4da6ff; color: #000; font-weight: bold; cursor: pointer; }
+
+    /* Quick Links Grid */
+    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; width: 100%; max-width: 450px; margin-bottom: 35px; }
+    .card { background: #1e1e1e; padding: 20px 10px; border-radius: 15px; text-align: center; text-decoration: none; color: #fff; transition: 0.2s; }
+    .card:hover { background: #2c2c2c; }
+    .icon { font-size: 28px; display: block; margin-bottom: 8px; }
+    .label { font-size: 14px; }
+
+    /* Offline Files Section */
+    .files { width: 100%; max-width: 450px; background: #1e1e1e; padding: 20px; border-radius: 15px; }
+    .files h2 { font-size: 16px; margin-bottom: 15px; color: #bbbbbb; }
+    .file-item { display: flex; justify-content: space-between; align-items: center; padding: 12px 0; border-bottom: 1px solid #2e2e2e; text-decoration: none; color: #fff; }
+    .file-item:last-child { border-bottom: none; }
+    .badge { background: #333; padding: 4px 10px; border-radius: 8px; font-size: 12px; color: #4da6ff; }
+  </style>
+</head>
+<body>
+
+  <h1>🌐 Wi-Fi Portal Hub</h1>
+
+  <!-- Google Search Bar -->
+  <form class="search-box" action="https://google.com" method="GET" target="_blank">
+    <input type="text" name="q" placeholder="Mag-search sa Google..." required>
+    <button type="submit">Search</button>
+  </form>
+
+  <!-- Quick App Shortcuts -->
+  <div class="grid">
+    <a href="https://youtube.com" target="_blank" class="card">
+      <span class="icon">▶️</span>
+      <span class="label">YouTube</span>
+    </a>
+    <a href="https://google.com" target="_blank" class="card">
+      <span class="icon">🔍</span>
+      <span class="label">Google</span>
+    </a>
+    <a href="#offline-files" class="card">
+      <span class="icon">📁</span>
+      <span class="label">Offline Files</span>
+    </a>
+  </div>
+
+  <!-- Offline File Manager List -->
+  <div class="files" id="offline-files">
+    <h2>📂 Offline Files (Local Storage)</h2>
+    <a href="files/sample-video.mp4" class="file-item">
+      <span>🎬 Sample Video.mp4</span>
+      <span class="badge">Play</span>
+    </a>
+    <a href="files/reviewer.pdf" class="file-item">
+      <span>📄 Reviewer.pdf</span>
+      <span class="badge">Open</span>
+    </a>
+    <a href="files/music.mp3" class="file-item">
+      <span>🎵 Offline Music.mp3</span>
+      <span class="badge">Listen</span>
+    </a>
+  </div>
+
+</body>
+</html>
